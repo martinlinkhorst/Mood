@@ -53,7 +53,7 @@ namespace MoodApp
 
         private static string Server
         {
-            get { return ConfigurationManager.AppSettings.GetValues("MongoServer")[0]; }
+            get { return ConfigurationManager.AppSettings.GetValues("MONGOHQ_URL")[0]; }
         }
 
         private static void UpdateCount(MoodDto result, IMongoCollection<MoodDto> mood)
