@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Mood of today</title>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+        Mood of today
+        <div id="mood">
+            
+        </div>
+    </body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                url: "/mood/statstoday/",
+                contentType: "application/json",
+                success: function(result) {
+                    result.forEach(function (mood) {
+                        $("#mood").append("<div>" + mood.Status + "</div><div>" + mood.Count + "</div><p>");
+                    });
+                }
+            });
+    });
+</script>
