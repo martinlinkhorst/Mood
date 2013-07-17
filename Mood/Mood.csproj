@@ -32,11 +32,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Nancy">
-      <HintPath>..\packages\Nancy.0.16.1\lib\net40\Nancy.dll</HintPath>
+    <Reference Include="Nancy, Version=0.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Nancy.0.18.0\lib\net40\Nancy.dll</HintPath>
     </Reference>
-    <Reference Include="Nancy.Hosting.Self">
-      <HintPath>..\packages\Nancy.Hosting.Self.0.16.1\lib\net40\Nancy.Hosting.Self.dll</HintPath>
+    <Reference Include="Nancy.Hosting.Aspnet">
+      <HintPath>..\packages\Nancy.Hosting.Aspnet.0.18.0\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Hosting.Self, Version=0.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Nancy.Hosting.Self.0.18.0\lib\net40\Nancy.Hosting.Self.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -66,7 +71,7 @@
     <Compile Include="Modules\Start.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Web.config" />
     <None Include="packages.config" />
     <None Include="Content\assets\.DS_Store" />
     <Content Include="Content\assets\font\fontello.eot">
