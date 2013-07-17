@@ -4,7 +4,7 @@ using System.Configuration;
 using Norm;
 using Norm.Collections;
 
-namespace MoodApp
+namespace Mood.Modules
 {
     public class Mood
     {

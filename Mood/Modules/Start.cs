@@ -1,6 +1,6 @@
 ﻿using Nancy;
 
-namespace MoodApp
+namespace Mood.Modules
 {
     public class Start : NancyModule
     {

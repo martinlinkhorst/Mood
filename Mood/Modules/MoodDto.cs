@@ -1,7 +1,7 @@
 ﻿using System;
 using Norm;
 
-namespace MoodApp
+namespace Mood.Modules
 {
     public class MoodDto
     {
